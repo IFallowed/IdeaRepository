@@ -1,0 +1,12 @@
+<templateSet group="MethodAnnotation">
+  <template name="M" value="*&#10; * @Description: //TODO $end$&#10; * @Author: KongCong&#10; * @Date: $date$ $time$&#10; * @Param: $param$&#10; * @Return: $return$&#10; **/&#10; " shortcut="ENTER" description="add Comments for method" toReformat="false" toShortenFQNames="true">
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="param" expression="methodParameters()" defaultValue="" alwaysStopAt="true" />
+    <variable name="return" expression="methodReturnType()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
